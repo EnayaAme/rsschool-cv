@@ -3,7 +3,6 @@
 ### Contacts: ###
 E-mail: <natalay1308@gmail.com>       
 GitHub: [EnayaAme]( https://gist.github.com/EnayaAme)         
-Phone: +375 29 3518684
 
 
 ### About me: ###
@@ -46,6 +45,7 @@ Now I’m trying to step into Front End Developer career. Before that, I worked 
 
 
 ### Languages: ###
++ Russian (native)
 + English (C1)
 + Japanese (N2)
 + German (basic)
