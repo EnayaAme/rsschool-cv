@@ -1,0 +1,30 @@
+.skills-languages {
+    background: linear-gradient(360deg, #9696BA 0%, #B3B1E1 26.8%, #CCC6CB 74.22%);
+}
+
+.skills, .languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-languages__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    .skills-languages__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: $color-item-background;
+        width: 400px;
+        height: 65px;
+        img {
+            margin-left: 20px;
+        }
+        p {
+            position: absolute;
+            left: 110px;
+        }
+    }
+}
