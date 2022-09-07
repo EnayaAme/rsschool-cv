@@ -1,0 +1,20 @@
+@mixin icon-size ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin media-desctop {
+    @media (max-width: $desctop-width) { @content; }
+}
+
+@mixin media-tablet {
+    @media (max-width: $tablet-width) { @content; }
+}
+
+@mixin media-mobile {
+    @media (max-width: $mobile-width) { @content; }
+}
+@mixin media-mobile-small {
+    @media (max-width: $mobile-width-small) { @content; }
+}
+

@@ -1,0 +1,19 @@
+.header {
+    background-color: $color-header-background;
+    position: absolute;
+    top: 0;
+    top: -120px;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    @include media-mobile {
+        background-color: rgba(150, 150, 186, 0.74);
+        top: -683px;
+    }
+    @include media-mobile-small {
+        top: -751px;
+    }
+    &._active {
+        top: 0;
+    }
+}
+

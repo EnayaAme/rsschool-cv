@@ -1,0 +1,24 @@
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+@import "abstract/constants";
+@import "abstract/placeholders";
+@import "abstract/mixins";
+@import "base/base";
+@import "base/typography";
+
+@import "layouts/wrapper";
+@import "layouts/columns";
+@import "layouts/header";
+@import "layouts/navigation";
+@import "layouts/start-screen";
+@import "layouts/about-me";
+@import "layouts/education-work";
+@import "layouts/skills-languages";
+@import "layouts/code-example";
+@import "layouts/projects";
+@import "layouts/footer";
+
+@import "components/buttons";
+@import "components/carousel";
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');

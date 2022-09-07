@@ -1,0 +1,209 @@
+
+.header_button {
+    position: absolute;
+    top: 100%;
+    transition: transform 0.3s ease 0s;
+    &._active {
+        transform: rotate(180deg);
+    }
+}
+
+.button__open-close {
+    background-image: url("../assets/ico/open-button.svg");
+    width: 80px;
+    height: 50px;
+    @extend %transition;
+    &:hover {
+        background-image: url("../assets/ico/open-button-hover.svg");
+    }
+}
+
+.start-screen__telegram {
+    background-image: url("../assets/ico/telegram-big.svg");
+    background-size: 100% 100%;
+    @include icon-size (150px, 150px);
+    @extend %transition;
+    &:hover {
+        background-image: url("../assets/ico/telegram-big-hover.svg");
+    }
+    @include media-tablet {
+        @include icon-size (100px, 100px);
+    }
+    @include media-mobile {
+        @include icon-size (80px, 80px);
+    }
+}
+
+.start-screen__discord {
+    background-image: url("../assets/ico/discord-big.svg");
+    background-size: 100% 100%;
+    @include icon-size (150px, 150px);
+    @extend %transition;
+    &:hover {
+        background-image: url("../assets/ico/discord-big-hover.svg");
+    }
+    @include media-tablet {
+        @include icon-size (100px, 100px);
+    }
+    @include media-mobile {
+        @include icon-size (80px, 80px);
+    }
+}
+
+.start-screen__github {
+    background-image: url("../assets/ico/github-big.svg");
+    background-size: 100% 100%;
+    @include icon-size (150px, 150px);
+    @extend %transition;
+    &:hover {
+        background-image: url("../assets/ico/github-big-hover.svg");
+    }
+    @include media-tablet {
+        @include icon-size (100px, 100px);
+    }
+    @include media-mobile {
+        @include icon-size (80px, 80px);
+    }
+}
+
+.start-screen__email {
+    background-image: url("../assets/ico/email-big.svg");
+    background-size: 100% 100%;
+    @include icon-size (150px, 150px);
+    @extend %transition;
+    &:hover {
+        background-image: url("../assets/ico/email-big-hover.svg");
+    }
+    @include media-tablet {
+        @include icon-size (100px, 100px);
+    }
+    @include media-mobile {
+        @include icon-size (80px, 80px);
+    }
+}
+
+.button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    @include icon-size (50px, 50px);
+    .button__download {
+    background-image: url("../assets/ico/download.svg");
+    @include icon-size (50px, 50px);
+    @extend %transition;
+    &:hover {
+        background-image: url("../assets/ico/download-hover.svg");
+    }
+}
+}
+
+.footer__telegram {
+    background-image: url("../assets/ico/telegram-small.svg");
+    background-size: 100% 100%;
+    @include icon-size (100px, 100px);
+    @extend %transition;
+    &:hover {
+        background-image: url("../assets/ico/telegram-small-hover.svg");
+    }
+    @include media-tablet {
+        @include icon-size (80px, 80px);
+    }
+    @include media-mobile {
+        @include icon-size (80px, 80px);
+    }
+}
+
+.footer__discord {
+    background-image: url("../assets/ico/discord-small.svg");
+    background-size: 100% 100%;
+    @include icon-size (100px, 100px);
+    @extend %transition;
+    &:hover {
+        background-image: url("../assets/ico/discord-small-hover.svg");
+    }
+    @include media-tablet {
+        @include icon-size (80px, 80px);
+    }
+    @include media-mobile {
+        @include icon-size (80px, 80px);
+    }
+}
+
+.footer__github {
+    background-image: url("../assets/ico/github-small.svg");
+    background-size: 100% 100%;
+    @include icon-size (100px, 100px);
+    @extend %transition;
+    &:hover {
+        background-image: url("../assets/ico/github-small-hover.svg");
+    }
+    @include media-tablet {
+        @include icon-size (80px, 80px);
+    }
+    @include media-mobile {
+        @include icon-size (80px, 80px);
+    }
+}
+
+.footer__email {
+    background-image: url("../assets/ico/email-small.svg");
+    @include icon-size (100px, 100px);
+    background-size: 100% 100%;
+    @extend %transition;
+    &:hover {
+        background-image: url("../assets/ico/email-small-hover.svg");
+    }
+    @include media-tablet {
+        @include icon-size (80px, 80px);
+    }
+    @include media-mobile {
+        @include icon-size (80px, 80px);
+    }
+}
+
+.carousel__button_left {
+    background-image: url("../assets/ico/left-arrow.svg");
+    @include icon-size (50px, 80px);
+    @extend %transition;
+    &:hover {
+        background-image: url("../assets/ico/left-arrow-hover.svg");
+    }
+}
+
+.carousel__button_right {
+    background-image: url("../assets/ico/right-arrow.svg");
+    @include icon-size (50px, 80px);
+    @extend %transition;
+    &:hover {
+        background-image: url("../assets/ico/right-arrow-hover.svg");
+    }
+}
+
+.scroll_button {
+    display: none;
+    height: 100%;
+    background-image: url("../assets/ico/close-button.svg");
+    @include icon-size (80px, 50px);
+    position: fixed;
+    @extend %transition;
+    bottom: 2%;
+    right: 2%;
+    z-index: 999;
+    //transition: transform 0.3s ease 0s;
+    &:hover {
+        background-image: url("../assets/ico/close-button-hover.svg");
+    }
+    &-active {
+        display: block;
+    }
+}
+
+.logo__icon {
+    background-image: url("../assets/ico/rs_school_js.svg");
+    @include icon-size (100px, 100px);
+    background-repeat: no-repeat;
+    background-position: center;
+    @include media-desctop {
+        @include icon-size (50px, 50px);
+    }
+}
