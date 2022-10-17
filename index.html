@@ -13,11 +13,11 @@
         <div class="wrapper header__wrapper">
             <nav class="header__navigation">
                 <ul class="navigation"> 
-                    <li><a href="#about-me">about me</a></li>
-                    <li><a href="#education-work">education &<br>working experience</a></li>
-                    <li><a href="#skills-languages">skills &<br>languages</a></li>
-                    <li><a href="#code-example">code<br>example</a></li>
-                    <li><a href="#projects">my projects</a></li>
+                    <li><a href="#about-me" target="_self">about me</a></li>
+                    <li><a href="#education-work" target="_self">education &amp<br>working experience</a></li>
+                    <li><a href="#skills-languages" target="_self">skills &amp<br>languages</a></li>
+                    <li><a href="#code-example" target="_self">code<br>example</a></li>
+                    <li><a href="#projects" target="_self">my projects</a></li>
                 </ul>
             </nav>
             <div class="header_button">
@@ -198,8 +198,8 @@
                 <div class="code-example__answer-block">
                     <p class="code-example__answer-text"> 
                     function combine(...arg) {<br>
-                        return arg.reduce( (result,obj) => {<br>
-                          Object.keys(obj).forEach( key => result[key] = (result[key] || 0) + obj[key] );<br>
+                        return arg.reduce( (result,obj) =&gt {<br>
+                          Object.keys(obj).forEach( key =&gt result[key] = (result[key] || 0) + obj[key] );<br>
                           return result;<br>
                         }, {} );<br>
                       }
