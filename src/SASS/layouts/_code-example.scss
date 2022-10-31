@@ -1,0 +1,10 @@
+.code-example {
+    height: 100vh;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(174, 168, 224, 0) 0%, rgba(174, 168, 224, 0.31) 100%);
+    .code-example__answer-block {
+        //padding: 50px 125px;
+        background-image: url(../assets/img/code-example.jpg);
+        background-size: 100% 100%;
+        overflow: hidden; //проверить можно ли убрать //
+    }
+}

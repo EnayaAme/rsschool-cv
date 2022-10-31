@@ -1,0 +1,26 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "https://enayaame.github.io/rsschool-cv/cv https://enayaame.github.io/rsschool-cv/",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch src/SASS/style.scss src/SASS/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnayaAme/rsschool-cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnayaAme/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/EnayaAme/rsschool-cv#readme",
+  "dependencies": {
+    "-": "^0.0.1",
+    "D": "^1.0.0",
+    "normalize-scss": "^7.0.1",
+    "sass": "^1.54.8"
+  }
+}

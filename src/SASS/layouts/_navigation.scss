@@ -1,0 +1,31 @@
+ul li {
+    display: inline-block;
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: $color-white-dark;
+    &:hover {
+        cursor: pointer;
+        color: $color-white;
+    }
+}
+.header__navigation {
+    width: $desctop-width;
+    @include media-desctop {
+        width: 100%;
+    }
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline-start: 0px;
+    @include media-mobile {
+        height: 90vh;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 60px;
+    }
+}

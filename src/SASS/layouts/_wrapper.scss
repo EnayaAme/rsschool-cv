@@ -1,0 +1,39 @@
+.wrapper {
+    max-width: $desctop-width;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.start-screen__wrapper {
+    padding: 5%;
+}
+
+.about-me__wrapper, .code-example__wrapper, .projects__wrapper {
+    padding: 0px 5% 5%;
+}
+
+.about-me__wrapper {
+    @include media-desctop {
+        flex-direction: column;
+    }
+}
+
+.education-work__wrapper {
+    padding: 0px 5% 1%;
+}
+
+.skills-languages__wrapper {
+    padding: 0px 5% 3%;
+}
+
+.carousel__wrapper {
+    width: calc((40vw * 2) + 28px);
+    overflow: hidden;
+    background-color: $color-projects-background;
+    padding: 28px 28px 0 28px;
+    //margin: 0 200px;
+    display: flex;               /// !!!!!!!
+    justify-content: flex-start; /// !!!!!!!
+    // column-gap: 28px;
+}

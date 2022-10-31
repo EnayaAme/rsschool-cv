@@ -1,0 +1,31 @@
+.education-work {
+    background-image: url('../assets/img/education-work.jpg');
+    background-position:0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.education__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: baseline;
+    @include media-mobile {
+        width: 70%;
+    }
+}
+
+.education__item__picture {
+    @include media-mobile {
+        width: 70%;
+    }
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-mobile {
+        max-width: 98%;
+    }
+}

@@ -1,0 +1,28 @@
+.footer {
+    padding: 20px;
+    background-image: url(../assets/img/Footer.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @include media-mobile {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+.date {
+    margin-right: 5px;
+}
+
+.info {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 20%;
+    left: 10px;
+    @include media-mobile {
+        position: static;
+    }
+ 
+}
