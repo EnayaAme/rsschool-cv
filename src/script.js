@@ -1,5 +1,7 @@
 "use strict"
 
+import projects from './projects.js';
+
 // работать с DOM лучше после того, как загрузился window//
 window.onload = function() {
     // ВЫПАДАЮЩЕЕ МЕНЮ //
@@ -8,6 +10,7 @@ window.onload = function() {
     window.addEventListener('scroll', trackScroll); // отслеживаем скролл и вешаем функцию //
     scrollButton.addEventListener('click', backToTop); // отслеживаем клик и вешаем функцию //
     // CAROUSEL //
+    createProjects();
     rightButton.addEventListener('click', moveRight);
     leftButton.addEventListener('click', moveLeft);
 }
@@ -56,6 +59,59 @@ function backToTop() {
     window.scrollTo(pageXOffset, 0); // я хз, почему оно зачеркнуто, но оно работает
 }
 
+
+///////////////////////////////         PROJECTS         /////////////////////////////// 
+
+class Element {
+    constructor(parentNode, tag = 'div', className = '', content = '') {
+        const element = document.createElement(tag);
+        element.classList = className;
+        element.textContent = content;
+        parentNode.append(element);
+        this.node = element;
+    }
+}
+class Image {
+    constructor(parentNode, src = '', tag = 'img', className = '') {
+        const img = document.createElement(tag);
+        img.classList = className;
+        img.src = src;
+        parentNode.append(img);
+        this.node = img;
+    }
+}
+
+class Link {
+    constructor(parentNode, href = '', tag = 'a', className = '', target = '_blank') {
+        const a = document.createElement(tag);
+        a.href = href;
+        a.classList = className;
+        a.href = href;
+        a.target = target;
+        parentNode.append(a);
+        this.node = a;
+    }
+}
+
+// структура проекта //
+class Project extends Element {
+    constructor (parentNode, data) {
+        super (parentNode, 'div', 'carousel__item');
+        this.link = new Link(this.node, data.link, 'a', 'carousel__link');
+        this.picture = new Element(this.node.firstChild, 'div', 'carousel__picture');
+        this.img = new Image(this.node.firstChild.firstChild, data.img);
+        this.name = new Element(this.node.firstChild, 'h3', 'default', data.name);
+    }
+}
+
+function createProjects() {
+    const projectsReverse = projects.reverse();
+    console.log(projects)
+    while (projectsReverse.length > 0) {
+        let current = projects.pop();
+        let project = new Project(carousel, current);
+    }
+}
 
 ///////////////////////////////         CAROUSEL         /////////////////////////////// 
 

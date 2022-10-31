@@ -39,26 +39,33 @@
 }
 
 .carousel__picture {
+    position: relative;
     border-radius: 20px;
     width: 40vw;
     height: 40vh;
+    overflow: hidden;
+    & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.shelter-picture {
-    background: url(../assets/img/Shelter.jpeg) 0 0/100% 100% no-repeat;
-}
+// .shelter-picture {
+//     background: url(../assets/img/Shelter.jpeg) 0 0/100% 100% no-repeat;
+// }
 
-.momentum-picture {
-    background: url(../assets/img/Momentum.jpeg) 0 0/100% 100% no-repeat;
-}
+// .momentum-picture {
+//     background: url(../assets/img/Momentum.jpeg) 0 0/100% 100% no-repeat;
+// }
 
-.eldritch-horror-picture {
-    background: url(../assets/img/Eldritch-horror.jpeg) 0 0/100% 100% no-repeat;
-}
+// .eldritch-horror-picture {
+//     background: url(../assets/img/Eldritch-horror.jpeg) 0 0/100% 100% no-repeat;
+// }
 
-.travel-picture {
-    background: url(../assets/img/Travel.jpeg) 0 0/100% 100% no-repeat;
-}
+// .travel-picture {
+//     background: url(../assets/img/Travel.jpeg) 0 0/100% 100% no-repeat;
+// }
 
 
 
